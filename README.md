@@ -9,3 +9,9 @@ module.exports = {
     mongoURI:'mlabURI'
 }
 ```
+## To run
+npm install<br>
+cd client<br>
+npm install<br>
+cd ..<br>
+npm run dev
