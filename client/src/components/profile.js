@@ -14,14 +14,26 @@ class Profile extends React.Component {
             })
     }
     render() { 
+        if(this.state.profile.googleId){
         return ( 
             <div>
-            <ul>
-                <li>GoogleID:{this.state.profile.googleId}</li>
-            </ul>
-            <a href="/api/logout">Logout</a>
+                <ul>
+                    <li>GoogleID:{this.state.profile.googleId}</li>
+                </ul>
+                <a href="/api/logout">Logout</a>
             </div>
          )
+        }
+        else{
+            return (
+                <div>
+                    <ul>
+                        <li>FacebookID:{this.state.profile.facebookId}</li>
+                    </ul>
+                    <a href="/api/logout">Logout</a>
+                </div>
+            )  
+        }
     }
 }
  
