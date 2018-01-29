@@ -22,7 +22,7 @@ module.exports = app => {
     });
 
     app.get('/auth/facebook', passport.authenticate('facebook', {
-        profileFields: ['id', 'name', 'picture.type(large)', 'emails', 'displayName', 'about', 'gender'],
+        profileFields: ['id', 'name'],
     })
     );
 
